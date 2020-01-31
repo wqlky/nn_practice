@@ -38,7 +38,7 @@ class TextDataLoader(object):
         data = [ [self.word_to_index[w] for w in line if self.word_to_index.get(w)!= None] 
                 for line in file_content ] 
         self.data = data
-        logging.info("load data done. real_vocab_num:%d result_vocab_num:%d data_size:%d",
+        logging.info("load data done. real_vocab_num:%d result_vocab_num:%d sentence:%d",
                      real_vocab_num, self.vocab_num, len(self.data))
         
             
